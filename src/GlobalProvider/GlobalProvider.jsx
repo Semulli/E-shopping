@@ -69,6 +69,15 @@ export const DataProvider = ({children}) => {
 
     };
 
+    const filteredProducts = () => {
+        const allProducts = [...favoriteData, ...basketData];
+        return searchQuery
+            ? allProducts.filter((product) =>
+                product.name.toLowerCase().includes(searchQuery.toLowerCase())
+            )
+            : [];
+    };
+
 
     return (
         <context.Provider
@@ -82,7 +91,8 @@ export const DataProvider = ({children}) => {
                 sortValue,
                 setSortValue,
                 searchQuery,
-                setSearchQuery
+                setSearchQuery,
+                filteredProducts
             }}>
             {children}
         </context.Provider>
