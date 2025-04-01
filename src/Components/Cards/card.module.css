@@ -1,0 +1,21 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*gap: 20px;*/
+}
+
+.card {
+    width: 400px;
+    margin: 10px;
+    box-shadow: 0 10px 20px #9b86b3 !important;
+    border-radius: 15px;
+    /*background-color: #747bff !important;*/
+}
+
+
+.morePart {
+    display: flex;
+}
+

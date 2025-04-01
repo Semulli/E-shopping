@@ -1,0 +1,10 @@
+span{
+    cursor: pointer;
+}
+span:hover{
+    color: darkred;
+}
+
+.active{
+    color: darkred ;
+}
